@@ -1,15 +1,21 @@
 package task2;
 
+import java.util.Scanner;
+
 public class Task2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		double a = 0.5;
-		double b = 0.7;
-		double c = 0.4;
-		double p = (a+b+c)/2; //Half of perimeter
-		double Square = Math.sqrt(p*(p-a)*(p-b)*(p-c)); //Herons formula
-		System.out.println("Square of the triangle is:" +Square);
-	}
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Input number");
+		int number = sc.nextInt();
+		if (number >=1 && number <= 144) {
+		int entrance = (number-1)/36+1;
+		int floor = (number-1)%36/4+1;
+		System.out.println("The appartament is on " + entrance + " entrance and " + floor+ " floor" );
+		}
+		else System.out.println("Wrong number");
+		sc.close();
+		}
 
 }
