@@ -20,6 +20,7 @@ public class Hw4Task7 {
 			}
 		System.out.println();	
 		}
+		sc.close();
 	}
 		
 }
